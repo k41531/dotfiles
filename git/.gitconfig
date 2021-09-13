@@ -1,0 +1,5 @@
+[init]
+	defaultBranch = trunk
+[user]
+	email = me@kaisei.dev
+	name = Kaisei Waki
