@@ -227,27 +227,27 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="W-F1">
+    <keybind key="W-1">
       <action name="GoToDesktop">
         <to>1</to>
       </action>
     </keybind>
-    <keybind key="W-F2">
+    <keybind key="W-2">
       <action name="GoToDesktop">
         <to>2</to>
       </action>
     </keybind>
-    <keybind key="W-F3">
+    <keybind key="W-3">
       <action name="GoToDesktop">
         <to>3</to>
       </action>
     </keybind>
-    <keybind key="W-F4">
+    <keybind key="W-4">
       <action name="GoToDesktop">
         <to>4</to>
       </action>
     </keybind>
-    <keybind key="W-d">
+    <keybind key="W-S-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
@@ -325,14 +325,19 @@
         <command>kfmclient openProfile filemanagement</command>
       </action>
     </keybind>
-    <keybind key="S-W-t">
+    <keybind key="W-Return">
       <action name="Execute">
         <command>alacritty</command>
       </action>
     </keybind> 
-    <keybind key="S-W-f">
+    <keybind key="W-f">
       <action name="Execute">
         <command>firefox</command>
+      </action>
+    </keybind>
+    <keybind key="W-d">
+      <action name="Execute">
+        <command>rofi -show drun -sidebar-mode -modi run,drun,window</command>
       </action>
     </keybind>
     <keybind key="S-A-h">
@@ -367,6 +372,29 @@
 	<width client="yes">1/2</width>
       </action>
     </keybind>
+    <keybind key="S-A-o">
+  	<action name="Maximize"/>
+  	<action name="Undecorate"/>
+    </keybind>
+    <keybind key="S-A-n">
+  	<action name="Unmaximize"/>
+  	<action name="Decorate"/>
+    </keybind>
+      <keybind key="XF86AudioRaiseVolume">
+    <action name="Execute">
+      <execute>sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +5%"</execute>
+    </action>
+  </keybind>
+  <keybind key="XF86AudioLowerVolume">
+    <action name="Execute">
+      <execute>sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -5%"</execute>
+    </action>
+  </keybind>
+  <keybind key="XF86AudioMute">
+    <action name="Execute">
+      <execute>pactl set-sink-mute 0 toggle</execute>
+    </action>
+  </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
