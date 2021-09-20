@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Triste-Froly</name>
+    <name>Vermello</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -123,10 +123,7 @@
     <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
-      <!-- set names up here if you want to, like this:
-    <name>desktop 1</name>
-    <name>desktop 2</name>
-    -->
+      <name>Primary</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -329,7 +326,7 @@
       <action name="Execute">
         <command>alacritty</command>
       </action>
-    </keybind> 
+    </keybind>
     <keybind key="W-f">
       <action name="Execute">
         <command>firefox</command>
@@ -341,60 +338,64 @@
       </action>
     </keybind>
     <keybind key="S-A-h">
+      <action name="Unmaximize"/>
+      <action name="Maximize"><direction>vertical</direction></action>
       <action name="MoveResizeTo">
         <x>0</x>
         <y>0</y>
-	<height client="yes">19/20</height>
-	<width client="yes">1/2</width>
+        <width client="yes">1/2</width>
       </action>
-    </keybind> 
+    </keybind>
     <keybind key="S-A-j">
+      <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>0</x>
-	<y client="yes">1/2</y>
-	<height client="yes">1/2</height>
-	<width client="yes">1/1</width>
+        <y client="yes">-0</y>
+        <height client="yes">1/2</height>
+        <width client="yes">1/1</width>
       </action>
-    </keybind> 
+    </keybind>
     <keybind key="S-A-k">
+      <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>0</x>
         <y>0</y>
-	<height client="yes">1/2</height>
-	<width client="yes">1/1</width>
+        <height client="yes">1/2</height>
+        <width client="yes">1/1</width>
       </action>
-    </keybind> 
+    </keybind>
     <keybind key="S-A-l">
+      <action name="Unmaximize"/>
+      <action name="Maximize"><direction>vertical</direction></action>
       <action name="MoveResizeTo">
-	<x client="yes">1/2</x>
+        <x client="yes">1/2</x>
         <y>0</y>
-	<height client="yes">19/20</height>
-	<width client="yes">1/2</width>
+        <width client="yes">1/2</width>
       </action>
     </keybind>
     <keybind key="S-A-o">
-  	<action name="Maximize"/>
-  	<action name="Undecorate"/>
+      <action name="Maximize"/>
+      <action name="Undecorate"/>
     </keybind>
     <keybind key="S-A-n">
-  	<action name="Unmaximize"/>
-  	<action name="Decorate"/>
+      <action name="Unmaximize"/>
+      <action name="Decorate"/>
     </keybind>
-      <keybind key="XF86AudioRaiseVolume">
-    <action name="Execute">
-      <execute>sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +5%"</execute>
-    </action>
-  </keybind>
-  <keybind key="XF86AudioLowerVolume">
-    <action name="Execute">
-      <execute>sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -5%"</execute>
-    </action>
-  </keybind>
-  <keybind key="XF86AudioMute">
-    <action name="Execute">
-      <execute>pactl set-sink-mute 0 toggle</execute>
-    </action>
-  </keybind>
+    <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute">
+        <execute>sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +5%"</execute>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute">
+        <execute>sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -5%"</execute>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioMute">
+      <action name="Execute">
+        <execute>pactl set-sink-mute 0 toggle</execute>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
