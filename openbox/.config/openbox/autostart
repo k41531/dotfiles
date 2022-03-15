@@ -18,3 +18,4 @@
 
 # Setting wallpaper
 sh ~/.fehbg &
+tint2 &
