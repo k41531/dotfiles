@@ -124,6 +124,7 @@
     <firstdesk>1</firstdesk>
     <names>
       <name>Primary</name>
+      <name>Note</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -339,7 +340,9 @@
     </keybind>
     <keybind key="S-A-h">
       <action name="Unmaximize"/>
-      <action name="Maximize"><direction>vertical</direction></action>
+      <action name="Maximize">
+        <direction>vertical</direction>
+      </action>
       <action name="MoveResizeTo">
         <x>0</x>
         <y>0</y>
@@ -366,7 +369,9 @@
     </keybind>
     <keybind key="S-A-l">
       <action name="Unmaximize"/>
-      <action name="Maximize"><direction>vertical</direction></action>
+      <action name="Maximize">
+        <direction>vertical</direction>
+      </action>
       <action name="MoveResizeTo">
         <x client="yes">1/2</x>
         <y>0</y>
