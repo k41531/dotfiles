@@ -31,3 +31,6 @@ colors:
     cyan:    '0x3FDCEE'
     white:   '0xBEBEC1'
   indexed_colors: []
+
+key_bindings:
+  - { key: Space, mods: Control, chars: "\x00" } # ctrl + space
