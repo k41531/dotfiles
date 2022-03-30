@@ -124,7 +124,9 @@
     <firstdesk>1</firstdesk>
     <names>
       <name>Primary</name>
-      <name>Note</name>
+      <name>Terminal</name>
+      <name>Browser</name>
+      <name>Zettel</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
