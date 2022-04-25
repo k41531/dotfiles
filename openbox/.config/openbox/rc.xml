@@ -120,13 +120,14 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
+    <number>5</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>Primary</name>
       <name>Terminal</name>
       <name>Browser</name>
       <name>Zettel</name>
+      <name>Parrot</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -247,6 +248,11 @@
         <to>4</to>
       </action>
     </keybind>
+    <keybind key="W-0">
+      <action name="GoToDesktop">
+        <to>5</to>
+      </action>
+    </keybind>
     <keybind key="W-S-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
@@ -335,7 +341,7 @@
         <command>firefox</command>
       </action>
     </keybind>
-    <keybind key="W-d">
+    <keybind key="W-space">
       <action name="Execute">
         <command>rofi -show drun -sidebar-mode -modi run,drun,window</command>
       </action>
