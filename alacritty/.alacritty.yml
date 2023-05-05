@@ -1,6 +1,15 @@
 # Font settings
 font:
-  size: 6
+  size: 8
+  normal:
+    family: BerkeleyMono
+    style: Regular
+  italic:
+    family: BerkeleyMono
+    style: Italic
+  bold:
+    family: BerkeleyMono
+    style: Bold
 
 # Colors thelovelace
 # https://github.com/eendroroy/alacritty-theme/blob/master/themes/thelovelace.yaml
